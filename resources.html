@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>South Brunswick Science Olympiad</title>
     <meta charset="UTF-8">
@@ -9,19 +10,21 @@
     <link rel="icon" type="image" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
                 <a href="index.html" class="title">SBSO</a>
             </div>
-            
+
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <nav class="nav" id="mainNav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -37,7 +40,7 @@
             <div class="resources-content">
                 <h1>Resources</h1>
                 <p>We hope to post our own Science Olympiad resources here in the near future!</p>
-                
+
                 <div class="resources-coming-soon">
                     <h3>Coming Soon</h3>
                     <ul>
@@ -49,11 +52,11 @@
                         <br>
                     </ul>
                 </div>
-                
+
                 <div class="external-resources">
                     <h3>Helpful External Resources</h3>
                     <div class="resource-links">
-                        <a href="https://samuel-asefa.github.io/Sciolytics/src/index.html" target="_blank" class="resource-link">
+                        <a href="https://sciolytics.vercel.app" target="_blank" class="resource-link">
                             <i class="fas fa-external-link-alt"></i>
                             <span>Sciolytics</span>
                         </a>
@@ -78,17 +81,18 @@
                 <p>Fridays After School</p>
                 <p>Room C205</p>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Follow Us</h3>
-                <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i>
+                    Instagram</a>
                 <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
                 <div class="social-links">
                     <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Contact</h3>
                 <p>750 Ridge Road</p>
@@ -96,7 +100,7 @@
                 <p>sbhsscioly@gmail.com</p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; <span id="current-year">2026</span> South Brunswick Science Olympiad.</p>
             <script>
@@ -109,13 +113,14 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainNav = document.getElementById('mainNav');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mainNav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active')
+                ? '<i class="fas fa-times"></i>'
                 : '<i class="fas fa-bars"></i>';
         });
     </script>
 </body>
+
 </html>
