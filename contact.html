@@ -89,7 +89,10 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 South Brunswick Science Olympiad.</p>
+            <p>&copy; <span id="current-year">2026</span> South Brunswick Science Olympiad.</p>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 
