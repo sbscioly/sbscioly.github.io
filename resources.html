@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Resources - South Brunswick Science Olympiad | SBSO</title>
     <meta charset="UTF-8">
@@ -23,119 +22,133 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <link rel="icon" type="image" href="assets/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <meta name="google-site-verification" content="EVGXTmXlC1WFY-uFz_MeOTSR944WC0LATHaszsey2Ws" />
 </head>
-
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html" class="title">SBSO</a>
-            </div>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <nav class="nav" id="mainNav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="updates.html">Updates</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+    <header class="site-header">
+        <a href="index.html" class="logo">SBSO</a>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="updates.html">Updates</a>
+            <a href="resources.html" class="active">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <section class="about-section">
-        <div class="container resources-container">
-            <div class="resources-content">
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="label">Knowledge Base</span>
                 <h1>Resources</h1>
-                <p>We hope to post our own Science Olympiad resources here in the near future!</p>
+                <p>Essential materials, guides, and links to support your Science Olympiad preparation.</p>
+            </div>
+        </section>
 
-                <div class="resources-coming-soon">
-                    <h3>Coming Soon</h3>
+        <section class="section">
+            <div class="container">
+                <div class="split-layout">
+                    
+                    <div>
+                        <h3 class="label">Internal Materials</h3>
+                        <h2 style="margin-bottom: var(--s-md);">Coming Soon</h2>
+                        <p style="margin-bottom: var(--s-lg);">We are currently curating our internal repository of study guides, build tutorials, and practice materials. Check back soon for:</p>
+                        
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: var(--s-xs); padding-left: 1rem; border-left: 2px solid var(--c-border);">Event-specific study guides</li>
+                            <li style="margin-bottom: var(--s-xs); padding-left: 1rem; border-left: 2px solid var(--c-border);">Build event schematics and tips</li>
+                            <li style="margin-bottom: var(--s-xs); padding-left: 1rem; border-left: 2px solid var(--c-border);">Practice tests from previous invitationals</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="label" style="margin-bottom: var(--s-sm);">External Links</h3>
+                        
+                        <div class="resource-list">
+                            <a href="https://sciolytics.vercel.app" target="_blank" class="resource-link-item">
+                                <div>
+                                    <h3>Sciolytics</h3>
+                                    <span style="font-size: 0.875rem; color: var(--c-text-secondary);">Data analysis and score tracking</span>
+                                </div>
+                                <i class="fas fa-external-link-alt" style="color: var(--c-accent-blue);"></i>
+                            </a>
+                            
+                            <a href="https://www.soinc.org/" target="_blank" class="resource-link-item">
+                                <div>
+                                    <h3>SOINC Official Site</h3>
+                                    <span style="font-size: 0.875rem; color: var(--c-text-secondary);">National Science Olympiad organization</span>
+                                </div>
+                                <i class="fas fa-external-link-alt" style="color: var(--c-accent-blue);"></i>
+                            </a>
+
+                            <a href="https://www.soinc.org/events/rules-manuals" target="_blank" class="resource-link-item">
+                                <div>
+                                    <h3>Rules Manuals</h3>
+                                    <span style="font-size: 0.875rem; color: var(--c-text-secondary);">Official current season rules</span>
+                                </div>
+                                <i class="fas fa-external-link-alt" style="color: var(--c-accent-blue);"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>SBSO</h2>
+                    <p style="max-width: 300px; opacity: 0.7;">South Brunswick High School<br>Science Olympiad Team</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="label">Navigation</h3>
                     <ul>
-                        <li>Study guides for various events</li>
-                        <li>Build event tips and tutorials</li>
-                        <li>Practice tests and materials</li>
-                        <li>Competition preparation strategies</li>
-                        <li>Event-specific reference materials</li>
-                        <br>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="updates.html">Updates & Results</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="external-resources">
-                    <h3>Helpful External Resources</h3>
-                    <div class="resource-links">
-                        <a href="https://sciolytics.vercel.app" target="_blank" class="resource-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Sciolytics</span>
-                        </a>
-                        <a href="https://www.soinc.org/" target="_blank" class="resource-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Science Olympiad Official Website</span>
-                        </a>
-                        <a href="https://www.soinc.org/events/rules-manuals" target="_blank" class="resource-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Event Rules and Manuals</span>
-                        </a>
-                    </div>
+                
+                <div class="footer-nav">
+                    <h3 class="label">Contact & Meetings</h3>
+                    <ul>
+                        <li><span style="opacity: 0.7;">Fridays After School</span></li>
+                        <li><span style="opacity: 0.7;">Room C205</span></li>
+                        <li style="margin-top: 1rem;"><a href="mailto:sbhsscioly@gmail.com">sbhsscioly@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Meetings</h3>
-                <p>Fridays After School</p>
-                <p>Room C205</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i>
-                    Instagram</a>
-                <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> South Brunswick Science Olympiad.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>750 Ridge Road</p>
-                <p>Monmouth Junction, NJ</p>
-                <p>sbhsscioly@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy;
-                <script>document.write(new Date().getFullYear())</script> South Brunswick Science Olympiad.
-            </p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainNav = document.getElementById('mainNav');
-
+        
         mobileMenuBtn.addEventListener('click', () => {
             mainNav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainNav.classList.contains('active')
-                ? '<i class="fas fa-times"></i>'
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
                 : '<i class="fas fa-bars"></i>';
         });
     </script>
 </body>
-
 </html>

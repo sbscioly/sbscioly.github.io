@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Contact Us - South Brunswick Science Olympiad | SBSO</title>
     <meta charset="UTF-8">
@@ -23,110 +22,117 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <link rel="icon" type="image" href="assets/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <meta name="google-site-verification" content="EVGXTmXlC1WFY-uFz_MeOTSR944WC0LATHaszsey2Ws" />
 </head>
-
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html" class="title">SBSO</a>
-            </div>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <nav class="nav" id="mainNav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="updates.html">Updates</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+    <header class="site-header">
+        <a href="index.html" class="logo">SBSO</a>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="updates.html">Updates</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
     </header>
 
-    <section class="about-section">
-        <div class="container contact-container">
-            <div class="contact-content">
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="label">Get in Touch</span>
                 <h1>Contact Us</h1>
-                <p>Have questions about South Brunswick Science Olympiad? We'd love to hear from you!</p>
+                <p>Have questions about our program? We'd love to hear from you.</p>
+            </div>
+        </section>
 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3><i class="fas fa-envelope"></i> Email</h3>
-                        <p>To reach out to our board, send an email to:</p>
-                        <p><a href="mailto:sbhsscioly@gmail.com">sbhsscioly@gmail.com</a></p>
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <div class="contact-meta">
+                        <h3 class="label" style="margin-top: 0;">Direct Inquiries</h3>
+                        <p style="margin-bottom: var(--s-md);">For general questions, please reach out to our executive board.</p>
+                        <a href="mailto:sbhsscioly@gmail.com" class="text-link" style="font-size: 1.125rem;">sbhsscioly@gmail.com <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div style="margin-bottom: var(--s-lg);">
+                            <h3 class="label">Faculty Advisor</h3>
+                            <p><strong>Mr. William Hackmeister</strong><br>
+                            <a href="mailto:william.hackmeister@sbschools.org" class="text-link" style="text-transform: none; letter-spacing: normal;">william.hackmeister@sbschools.org</a></p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--s-lg);">
+                            <h3 class="label">Location & Meetings</h3>
+                            <p><strong>South Brunswick High School</strong><br>
+                            750 Ridge Road<br>
+                            Monmouth Junction, NJ 08852</p>
+                            
+                            <p style="margin-top: var(--s-sm);">
+                                <strong>Meeting Time:</strong> Fridays After School<br>
+                                <strong>Room:</strong> C205
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="contact-item">
-                        <h3><i class="fas fa-user"></i> Advisor</h3>
-                        <p>To reach out to our advisor, Mr. Hackmeister, send an email to:</p>
-                        <p><a href="mailto:william.hackmeister@sbschools.org">william.hackmeister@sbschools.org</a></p>
-                    </div>
-
-                    <div class="contact-item">
-                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-                        <p>South Brunswick High School</p>
-                        <p>750 Ridge Road</p>
-                        <p>Monmouth Junction, NJ</p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Meetings</h3>
-                <p>Fridays After School</p>
-                <p>Room C205</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>SBSO</h2>
+                    <p style="max-width: 300px; opacity: 0.7;">South Brunswick High School<br>Science Olympiad Team</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="label">Navigation</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="updates.html">Updates & Results</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="label">Contact & Meetings</h3>
+                    <ul>
+                        <li><span style="opacity: 0.7;">Fridays After School</span></li>
+                        <li><span style="opacity: 0.7;">Room C205</span></li>
+                        <li style="margin-top: 1rem;"><a href="mailto:sbhsscioly@gmail.com">sbhsscioly@gmail.com</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i>
-                    Instagram</a>
-                <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> South Brunswick Science Olympiad.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>750 Ridge Road</p>
-                <p>Monmouth Junction, NJ</p>
-                <p>sbhsscioly@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy;
-                <script>document.write(new Date().getFullYear())</script> South Brunswick Science Olympiad.
-            </p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainNav = document.getElementById('mainNav');
-
+        
         mobileMenuBtn.addEventListener('click', () => {
             mainNav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainNav.classList.contains('active')
-                ? '<i class="fas fa-times"></i>'
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
                 : '<i class="fas fa-bars"></i>';
         });
     </script>
 </body>
-
 </html>

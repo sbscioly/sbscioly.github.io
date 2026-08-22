@@ -5,185 +5,267 @@
     <title>About Us - South Brunswick Science Olympiad | SBSO</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about the South Brunswick Science Olympiad (SBSO) club, our history, our leadership, and how we foster a love for science and STEM.">
-    <meta name="keywords" content="About South Brunswick Science Olympiad, SBSO club, SBHS Science Olympiad team, Science Olympiad leadership">
+    <meta name="description"
+        content="Learn about the South Brunswick Science Olympiad (SBSO) club, our history, our leadership, and how we foster a love for science and STEM.">
+    <meta name="keywords"
+        content="About South Brunswick Science Olympiad, SBSO club, SBHS Science Olympiad team, Science Olympiad leadership">
     <meta name="author" content="South Brunswick Science Olympiad">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sbscioly.github.io/about.html">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sbscioly.github.io/about.html">
     <meta property="og:title" content="About Us - South Brunswick Science Olympiad | SBSO">
-    <meta property="og:description" content="Learn about the South Brunswick Science Olympiad (SBSO) club, our history, our leadership, and how we foster a love for science and STEM.">
+    <meta property="og:description"
+        content="Learn about the South Brunswick Science Olympiad (SBSO) club, our history, our leadership, and how we foster a love for science and STEM.">
     <meta property="og:image" content="https://sbscioly.github.io/assets/princeton-awards-ceremony.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sbscioly.github.io/about.html">
     <meta name="twitter:title" content="About Us - South Brunswick Science Olympiad | SBSO">
-    <meta name="twitter:description" content="Learn about the South Brunswick Science Olympiad (SBSO) club, our history, our leadership, and how we foster a love for science and STEM.">
+    <meta name="twitter:description"
+        content="Learn about the South Brunswick Science Olympiad (SBSO) club, our history, our leadership, and how we foster a love for science and STEM.">
     <meta name="twitter:image" content="https://sbscioly.github.io/assets/princeton-awards-ceremony.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <link rel="icon" type="image" href="assets/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <meta name="google-site-verification" content="EVGXTmXlC1WFY-uFz_MeOTSR944WC0LATHaszsey2Ws" />
+    <style>
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--s-md);
+        }
+
+        .profile-card .image-wrap {
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            background-color: var(--c-bg-alt);
+        }
+
+        .profile-card .image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+            transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .profile-card:hover .image-wrap img {
+            transform: scale(1.04);
+        }
+
+        .profile-card h3 {
+            margin-top: var(--s-sm);
+            margin-bottom: 0.25rem;
+            font-size: 1.125rem;
+        }
+
+        .profile-card .role {
+            font-size: 0.75rem;
+            color: var(--c-accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .leadership-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .leadership-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--s-sm);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html" class="title">SBSO</a>
-            </div>
+    <header class="site-header">
+        <a href="index.html" class="logo">SBSO</a>
 
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
 
-            <nav class="nav" id="mainNav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="updates.html">Updates</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="updates.html">Updates</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <section class="about-section">
-        <div class="container about-container">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>Welcome to the South Brunswick Science Olympiad Club! Founded in 2008, our club is dedicated to
-                    fostering a deep love for science among students through engaging, hands-on challenges that span a
-                    diverse array of STEM fields.</p>
-                <p>Throughout the year, our team comes together to prepare for competitions that challenge our skills in
-                    physics, chemistry, biology, engineering, and build events. These competitions give us a chance to
-                    apply what we've learned in the classroom to real-world challenges, helping us develop
-                    problem-solving skills, teamwork, and a deeper understanding of science.</p>
-                <p>Whether you're an experienced competitor or just getting started, South Brunswick Science Olympiad
-                    offers a great place to learn, grow, and take on new challenges. Join us as we explore, push our
-                    limits, and accomplish more together.</p>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="label">Our Legacy</span>
+                <h1>About the Team</h1>
+                <p>A tradition of empirical rigor, engineering excellence, and collaborative achievement.</p>
             </div>
-            <div class="about-image">
-                <img src="assets/princeton-awards-ceremony.jpg" alt="Team at Princeton Awards Ceremony">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about-section">
-        <div class="container leadership-container">
-            <div class="section-title">
-                <h2>Meet our Leadership</h2>
-                <p>Here's our clubs Executive Board for the 2026-27 season!</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/leadership/sarvesh-raghupathy.png" alt="Sarvesh Raghupathy"
-                            style="object-position: center 15%;">
+        <section class="section">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="about-text">
+                        <h2>Our History &amp; Mission</h2>
+                        <p>Welcome to the South Brunswick Science Olympiad Club. Founded in 2008, our club is dedicated
+                            to fostering a deep love for science among students through engaging, hands-on challenges
+                            that span a diverse array of STEM fields.</p>
+                        <p>Throughout the year, our team comes together to prepare for competitions that challenge our
+                            skills in physics, chemistry, biology, engineering, and build events. These competitions
+                            give us a chance to apply what we've learned in the classroom to real-world challenges,
+                            helping us develop problem-solving skills, teamwork, and a deeper understanding of science.
+                        </p>
+                        <p>Whether you're an experienced competitor or just getting started, South Brunswick Science
+                            Olympiad offers a supportive environment to learn, grow, and take on new challenges.</p>
                     </div>
-                    <div class="feature-content">
+                    <div class="image-wrap">
+                        <img src="assets/princeton-awards-ceremony.jpg" alt="Team at Princeton Awards Ceremony">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--c-bg-alt);">
+            <div class="container">
+                <span class="label">The SBSO Impact</span>
+                <h2 style="margin-bottom: var(--s-lg);">By the Numbers</h2>
+
+                <div class="grid-3">
+                    <div class="stat-item">
+                        <span class="stat-number">2008</span>
+                        <h3 class="label">Year Founded</h3>
+                        <p style="font-size: 0.875rem;">Established with a commitment to academic competition and STEM
+                            excellence.</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">23</span>
+                        <h3 class="label">Core Events</h3>
+                        <p style="font-size: 0.875rem;">Spanning life, earth, physical sciences, engineering, and
+                            scientific inquiry.</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <h3 class="label">Active Members</h3>
+                        <p style="font-size: 0.875rem;">A vibrant community of dedicated students passionate about
+                            science.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <span class="label">2026-27 Season</span>
+                <h2 style="margin-bottom: var(--s-lg);">Executive Board</h2>
+
+                <div class="leadership-grid">
+                    <article class="profile-card">
+                        <div class="image-wrap">
+                            <img src="assets/leadership/sarvesh-raghupathy.png" alt="Sarvesh Raghupathy">
+                        </div>
                         <h3>Sarvesh Raghupathy</h3>
-                        <h4>President</h4>
-                    </div>
-                </div>
+                        <span class="role">President</span>
+                    </article>
 
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/leadership/pranav-yogeswaran.png" alt="Pranav Yogeswaran"
-                            style="object-position: center 15%;">
-                    </div>
-                    <div class="feature-content">
+                    <article class="profile-card">
+                        <div class="image-wrap">
+                            <img src="assets/leadership/pranav-yogeswaran.png" alt="Pranav Yogeswaran">
+                        </div>
                         <h3>Pranav Yogeswaran</h3>
-                        <h4>Physics Captain</h4>
-                    </div>
-                </div>
+                        <span class="role">Physics Captain</span>
+                    </article>
 
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/leadership/samuel-asefa.png" alt="Samuel Asefa" class="portrait-zoom"
-                            style="object-position: center 15%;">
-                    </div>
-                    <div class="feature-content">
+                    <article class="profile-card">
+                        <div class="image-wrap">
+                            <img src="assets/leadership/samuel-asefa.png" alt="Samuel Asefa"
+                                style="transform: scale(1.1); object-position: center 18%;">
+                        </div>
                         <h3>Samuel Asefa</h3>
-                        <h4>Build Captain</h4>
-                    </div>
-                </div>
+                        <span class="role">Build Captain</span>
+                    </article>
 
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/leadership/rohan-kunala.png" alt="Rohan Kunala"
-                            style="object-position: center 20%;">
-                    </div>
-                    <div class="feature-content">
+                    <article class="profile-card">
+                        <div class="image-wrap">
+                            <img src="assets/leadership/rohan-kunala.png" alt="Rohan Kunala"
+                                style="transform: scale(1.2); object-position: center 20%;">
+                        </div>
                         <h3>Rohan Kunala</h3>
-                        <h4>Build Captain</h4>
-                    </div>
-                </div>
+                        <span class="role">Build Captain</span>
+                    </article>
 
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/leadership/kunsh-mittal.png" alt="Kunsh Mittal"
-                            style="object-position: center 20%;">
-                    </div>
-                    <div class="feature-content">
+                    <article class="profile-card">
+                        <div class="image-wrap">
+                            <img src="assets/leadership/kunsh-mittal.png" alt="Kunsh Mittal"
+                                style="transform: scale(1.2); object-position: center 15%;">
+                        </div>
                         <h3>Kunsh Mittal</h3>
-                        <h4>Chemistry & Enviromental Captain</h4>
-                    </div>
-                </div>
+                        <span class="role">Chemistry &amp; Environmental Captain</span>
+                    </article>
 
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/leadership/nitya-mandowara.png" alt="Nitya Mandowara"
-                            style="object-position: center 15%;">
-                    </div>
-                    <div class="feature-content">
+                    <article class="profile-card">
+                        <div class="image-wrap">
+                            <img src="assets/leadership/nitya-mandowara.png" alt="Nitya Mandowara"
+                                style="object-position: center 15%;">
+                        </div>
                         <h3>Nitya Mandowara</h3>
-                        <h4>Biology Captain</h4>
-                    </div>
+                        <span class="role">Biology Captain</span>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Meetings</h3>
-                <p>Fridays After School</p>
-                <p>Room C205</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>SBSO</h2>
+                    <p style="max-width: 300px; opacity: 0.7;">South Brunswick High School<br>Science Olympiad Team</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h3 class="label">Navigation</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="updates.html">Updates &amp; Results</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h3 class="label">Contact &amp; Meetings</h3>
+                    <ul>
+                        <li><span style="opacity: 0.7;">Fridays After School</span></li>
+                        <li><span style="opacity: 0.7;">Room C205</span></li>
+                        <li style="margin-top: 1rem;"><a href="mailto:sbhsscioly@gmail.com">sbhsscioly@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i>
-                    Instagram</a>
-                <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            <div class="footer-bottom">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> South Brunswick Science Olympiad.
+                </p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>750 Ridge Road</p>
-                <p>Monmouth Junction, NJ</p>
-                <p>sbhsscioly@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy;
-                <script>document.write(new Date().getFullYear())</script> South Brunswick Science Olympiad.
-            </p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainNav = document.getElementById('mainNav');
 
